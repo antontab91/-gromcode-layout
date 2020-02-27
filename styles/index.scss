@@ -24,6 +24,7 @@ html{
     height: 62px;
     margin:0 auto;
     display: flex;
+    margin-top: 39px;
 }
 
 .logo{
@@ -47,15 +48,48 @@ html{
     &__description{
         font-weight: 400;
         opacity: .6;
-        // color: #2B292D;
+        color: #2B292D;
         // color: rgba(43, 41, 45, .6);
     }
 }
 
 .navigation{
     margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
 
     &__item{
+        line-height: 25px;
+        font-size: 18px;
+        margin-right: 50px;
+        color: #2B292D;
+    }
 
+    &__item:last-child{
+        margin-right: 0;
+    }
+
+    &__item_selected{
+        font-weight: 700;
+    }
+
+    &__arrow{
+        display: inline-block;
+        height: 5px;
+        width: 8px;
+        background-image: url(img/Arrow.png);
+        margin-left: 11px;
     }
 }
+
+.blue-button{
+    background-color: #3040c4;
+    color: #fff;
+    width: 160px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+}
+

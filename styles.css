@@ -27,6 +27,7 @@ html {
   height: 62px;
   margin: 0 auto;
   display: flex;
+  margin-top: 39px;
 }
 
 .logo {
@@ -48,10 +49,43 @@ html {
 .logo__description {
   font-weight: 400;
   opacity: 0.6;
+  color: #2B292D;
 }
 
 .navigation {
   margin-left: auto;
+  margin-top: 7px;
+  margin-right: 75px;
+}
+.navigation__item {
+  line-height: 25px;
+  font-size: 18px;
+  margin-right: 50px;
+  color: #2B292D;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+.navigation__item_selected {
+  font-weight: 700;
+}
+.navigation__arrow {
+  display: inline-block;
+  height: 5px;
+  width: 8px;
+  background-image: url(img/Arrow.png);
+  margin-left: 11px;
+}
+
+.blue-button {
+  background-color: #3040c4;
+  color: #fff;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=styles.css.map */
