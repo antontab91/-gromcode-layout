@@ -17,7 +17,15 @@ html {
   max-width: 1400px;
   /*тут*/
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  background-color: #F3C6BD;
+  padding-top: 39px;
 }
 
 .header {
@@ -27,7 +35,6 @@ html {
   height: 62px;
   margin: 0 auto;
   display: flex;
-  margin-top: 39px;
 }
 
 .logo {
@@ -48,8 +55,7 @@ html {
 }
 .logo__description {
   font-weight: 400;
-  opacity: 0.6;
-  color: #2B292D;
+  color: rgba(43, 41, 45, 0.6);
 }
 
 .navigation {
@@ -73,7 +79,7 @@ html {
   display: inline-block;
   height: 5px;
   width: 8px;
-  background-image: url(img/Arrow.png);
+  background-image: url(img/arrow.png);
   margin-left: 11px;
 }
 
@@ -86,6 +92,101 @@ html {
   font-weight: 700;
   border: none;
   border-radius: 2px;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__line {
+  border: 0.5px solid #2B292D;
+  width: 100%;
+  opacity: 0.1;
+  margin: 0;
+}
+.footer__description {
+  line-height: 26px;
+  font-size: 18px;
+  max-width: 360px;
+  width: 100%;
+  color: rgba(43, 41, 45, 0.6);
+  margin-top: 26px;
+}
+.footer .downloads {
+  margin-top: 25px;
+}
+.footer .downloads__item {
+  margin-right: 10px;
+}
+
+.footer-navigation {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  height: 338px;
+  display: flex;
+}
+
+.about-company {
+  padding-top: 44px;
+}
+
+.additional-navigation {
+  margin-top: 60px;
+  margin-left: auto;
+  display: flex;
+}
+.additional-navigation__colum {
+  margin-right: 29px;
+}
+
+.nav-links {
+  max-width: 265px;
+  width: 100%;
+}
+.nav-links__title {
+  font-family: Work Sans;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2B292D;
+  margin: 0;
+}
+.nav-links__list {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(43, 41, 45, 0.6);
+  padding: 0;
+  margin: 0;
+  margin-top: 18px;
+}
+
+.footer-links {
+  max-width: 1140px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.terms {
+  line-height: 50px;
+  font-size: 14px;
+}
+.terms__item {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  margin-right: 22px;
+}
+
+.social-links {
+  margin-left: auto;
+}
+.social-links__item {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
