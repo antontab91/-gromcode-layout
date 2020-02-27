@@ -53,4 +53,10 @@
   border-radius: 2px;
 }
 
+.about {
+  max-width: 1140;
+  margin: auto;
+  display: flex;
+}
+
 /*# sourceMappingURL=headline.css.map */

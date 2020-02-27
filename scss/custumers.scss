@@ -1,0 +1,14 @@
+.customers{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px ;
+    padding-bottom: 81px;
+
+    &__logo{
+        filter: brightness(0);
+    }
+}
