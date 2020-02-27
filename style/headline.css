@@ -1,0 +1,11 @@
+.headline {
+  max-width: 1140;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.headline__banner {
+  position: absolute;
+}
+
+/*# sourceMappingURL=headline.css.map */
