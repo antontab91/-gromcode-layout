@@ -1,14 +1,27 @@
 .about {
+  padding: 46px 15px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   background-color: #f4f5f7;
-  padding: 77px 130px 76px;
+}
+@media screen and (min-width: 400px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px;
+  }
 }
 
-.article {
-  max-width: 555px;
-  width: 100%;
+.article:last-child {
+  margin-top: 20px;
+}
+@media screen and (min-width: 400px) {
+  .article {
+    max-width: 555px;
+    width: 100%;
+  }
+  .article:last-child {
+    margin-top: 0px;
+  }
 }
 .article__title {
   font-weight: 700;

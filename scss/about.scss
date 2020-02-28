@@ -1,16 +1,31 @@
 @import 'variables.scss';
 
 .about{
+    padding: 46px 15px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     background-color: #f4f5f7;
-    padding: 77px 130px 76px; 
+
+    @include for-extra-small{
+        display: flex;
+        justify-content: space-between;
+        padding: 77px 130px 76px; 
+    }
 }
 
 .article{
-    max-width: 555px;
-    width: 100%;
+
+    &:last-child{
+        margin-top: 20px;
+    }
+
+    @include for-extra-small{
+        max-width: 555px;
+        width: 100%;
+
+        &:last-child{
+            margin-top: 0px;
+        }
+    }
     
 
     &__title{

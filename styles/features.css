@@ -1,6 +1,11 @@
 .features {
-  display: flex;
-  position: relative;
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .features {
+    display: flex;
+    position: relative;
+  }
 }
 .features__content {
   max-width: 1140px;

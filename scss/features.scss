@@ -1,8 +1,12 @@
 @import 'variables.scss';
 
 .features{  
-    display: flex;
-    position: relative;
+    display: none;
+    
+    @include for-extra-small{
+        display: flex;
+        position: relative;
+    }
 
     &__content{
         max-width: 1140px;
