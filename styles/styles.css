@@ -14,12 +14,18 @@ html {
 }
 
 .page {
-  max-width: 1400px;
   width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+}
+@media screen and (min-width: 400px) {
+  .page {
+    max-width: 1400px;
+    /*тут*/
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .action-button {
@@ -32,6 +38,5 @@ html {
   border: none;
   border-radius: 2px;
 }
-
 
 /*# sourceMappingURL=styles.css.map */

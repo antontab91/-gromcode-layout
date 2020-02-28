@@ -1,23 +1,76 @@
+@import 'variables.scss';
+
+
+
 .top-section{
     background-color: #F3C6BD;
-    padding-top: 39px;
+    
+    @include for-extra-small{
+        padding-top: 39px;
+    }
 }
 
+
 .header{
-    max-width: 1140px; /*тут*/
+    height: 64px;
     width: 100%;
-    height: 62px;
-    margin:0 auto;
+    background-color: #fff;
     display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    @include for-extra-small{
+        max-width: 1140px; /*тут*/
+        width: 100%;
+        height: 62px;
+        margin:0 auto;
+        display: flex;
+        background-color: transparent;
+    }
+
+}
+
+.header__button{
+    display: none;
+
+    @include for-extra-small{
+        display: block;
+    }
+}
+
+.header__menu-button{
+    width: 58px;
+    border: none;
+    border-left: 1px solid #00000026;
+    height: 100%;
+    margin-left: auto;
+    background: transparent;
+
+    @include for-extra-small{
+        display: none;
+    }
+
+    &-icon{
+        width: 18px;
+        height: 13px;
+        display: inline-block;
+        background-image: url(../img/icon-hamburger.png);
+    }
 }
 
 .logo{
     display: flex;
     align-items: center;
     &__image{
-        width: 60px;
-        height: 60px;
+        width: 48px;
+        height: 48px;
         margin-right: 15px;
+
+        @include for-extra-small{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
     }
 
     &__text{
@@ -30,15 +83,26 @@
     }
 
     &__description{
-        font-weight: 400;
-        color: rgba(43, 41, 45, .6);
+        display: none;
+        @include for-extra-small{
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(43, 41, 45, .6);
+            display: block;
+        }
     }
 }
 
 .navigation{
-    margin-left: auto;
-    margin-top: 7px;
-    margin-right: 75px;
+    display: none;
+    
+
+    @include for-extra-small{
+        margin-left: auto;
+        margin-top: 7px;
+        margin-right: 75px;
+        display: block;
+    }
 
     &__item{
         line-height: 25px;
@@ -59,7 +123,7 @@
         display: inline-block;
         height: 5px;
         width: 8px;
-        background-image: url(img/arrow.png);
+        background-image: url(../img/arrow.png);
         margin-left: 11px;
     }
 }
