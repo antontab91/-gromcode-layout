@@ -39,4 +39,15 @@ html {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 400px) {
+  .hide_desctop {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
