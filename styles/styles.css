@@ -1,0 +1,53 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  color: #2B292D;
+}
+
+.page {
+  width: 100%;
+}
+@media screen and (min-width: 400px) {
+  .page {
+    max-width: 1400px;
+    /*тут*/
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.action-button {
+  background-color: #3040c4;
+  color: #fff;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 400px) {
+  .hide_desctop {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
