@@ -1,33 +1,31 @@
-@import 'variables.scss';
+.tips{
+    display: flex;
+    position: relative;
+    padding-bottom: 103px;
 
-.features{  
-    display: none;
+    @include for-large-down {
+        display: none;
+    }
     
-    @include for-extra-small{
-        display: flex;
-        position: relative;
-    }
-
-    &__content{
-        max-width: 1140px;
-        width: 100%;
+    &__content {
+        width: 1140px;
         margin: auto;
+        display: flex;
     }
-
-    &__colum{
-        max-width: 459px;
-        width: 100%;
+    
+    &__column {
+        width: 459px;
     }
-
-    &__subtitle{
+    
+    &__subtitle {
         font-weight: 700;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 34px;
-        color: #009B4D;
+        color: $text-color-green;
         margin: 0;
     }
 
-    &__title{
+    &__title {
         font-weight: 700;
         font-size: 56px;
         line-height: 56px;
@@ -36,20 +34,20 @@
         margin-bottom: 0;
     }
 
-    &__description{
+    &__description {
         margin-top: 30px;
+        margin-bottom: 0;
         font-size: 24px;
         line-height: 34px;
-        margin-bottom: 0;
     }
 
-    &__advantage-header{
+    &__advantage-header {
         line-height: 42px;
         display: flex;
         margin-top: 42px;
     }
 
-    &__advantage-title{
+    &__advantage-title {
         font-weight: 700;
         font-size: 22px;
         line-height: 26px;
@@ -58,36 +56,36 @@
         margin-left: 15px;
     }
 
-    &__advantage-description{
+    &__advantage-description {
         font-size: 18px;
-        line-height: 26px; 
+        line-height: 26px;
         margin-top: 8px;
         margin-bottom: 0;
         padding-bottom: 20px;
-        border-bottom: 3px solid #3142c6;
+        border-bottom: 3px solid #3142C6;
     }
 
-    &__advantage-item{
+    &__advantage-item {
         border-bottom: 1px solid #2B292D26;
         margin-top: 21px;
         padding-bottom: 22px;
         display: flex;
     }
 
-    &__advantage-item-text{
+    &__advantage-item-text {
         font-weight: 700;
-        font-size: 18px;
-        line-height: 26px; 
+        font-size: 22px;
+        line-height: 26px;
         margin-left: 15px;
     }
 
-    &__left-decoration{
+    &__left-decoration {
         position: absolute;
         top: 258px;
         height: 166px;
     }
 
-    &__banner{
+    &__bunner {
         position: absolute;
         right: 0;
     }

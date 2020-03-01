@@ -1,41 +1,37 @@
-@import 'variables.scss';
-
-.about{
+.about {
     padding: 46px 15px;
     width: 100%;
-    background-color: #f4f5f7;
+    background-color: $color-light;
 
-    @include for-extra-small{
+    @include for-large-up {
         display: flex;
         justify-content: space-between;
-        padding: 77px 130px 76px; 
+        padding: 77px 130px 76px 130px;
     }
 }
 
-.article{
-
-    &:last-child{
-        margin-top: 20px;
+.article {
+    @include for-large-up {
+        width: 555px;
     }
 
-    @include for-extra-small{
-        max-width: 555px;
-        width: 100%;
+    &:last-child {
+        margin-top: 20px;
 
-        &:last-child{
-            margin-top: 0px;
+        @include for-large-up {
+            margin-top: 0;
         }
     }
     
-
-    &__title{
+    &__title {
         font-weight: 700;
         font-size: 22px;
         line-height: 32px;
         margin: 0;
     }
-
-    &__text{
+    
+    &__text {
+        margin-top: 6px;
         font-size: 22px;
         line-height: 32px;
         margin-bottom: 0;

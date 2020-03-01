@@ -1,28 +1,23 @@
-@import 'variables.scss';
-
-.tips{
+.features {
     margin-top: 8px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // position: relative;
 
-    @include for-extra-small{
+    @include for-large-up {
         display: none;
     }
 }
 
-.tip{
+.feature {
     padding: 40px 15px 0 15px;
-    border-bottom: 1px solid #e3e3e3;
-
-    &__subtitle{
+    border-bottom: 1px solid $color-light-grey;
+    
+    &__subtitle {
         font-weight: 700;
         font-size: 22px;
-        line-height: 34px;  
-        color: #009B4D;
+        line-height: 34px;
+        color: $text-color-green;
     }
 
-    &__title{
+    &__title {
         margin: 0;
         margin-top: 17px;
         font-weight: 700;
@@ -30,35 +25,32 @@
         line-height: 40px;
         letter-spacing: -0.357143px;
     }
-
-    &__description{
+    
+    &__decoration {
         margin: 0;
-        font-size: 24px;
-        line-height: 34px;
-        margin-top: 13px;
-        margin-bottom: 40px;
-    }
-
-    &__decoratian{
-        margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    &__image{
+    
+    &__description {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0;
+        margin-top: 13px;
+    }
+    
+    &__image {
         margin-top: 29px;
     }
-
-    &__image-caption{
+    
+    &__image-caption {
         font-size: 14px;
         line-height: 22px;
         text-align: center;
         color: rgba(43, 41, 45, 0.6);
         margin-top: 20px;
         max-width: 100%;
-        border: none;
-        text-decoration: none;
-    } 
+    }
 }
