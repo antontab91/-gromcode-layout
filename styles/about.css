@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #f4f5f7;
 }
+
 @media screen and (min-width: 400px) {
   .about {
     display: flex;

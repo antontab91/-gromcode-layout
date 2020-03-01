@@ -5,7 +5,6 @@ $lg: 1400px;
         @content;
     }
 }
-
 @mixin for-large-down {
     @media screen and (max-width: $lg - 1) {
         @content;
